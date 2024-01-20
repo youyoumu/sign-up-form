@@ -1,0 +1,167 @@
+@font-face {
+    font-family: staatliches;
+    src: url(fonts/Staatliches-Regular.ttf);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    /* height: 720px; */
+    height: 100vh;
+    max-height: 1080px;
+    min-height: 720px;
+}
+
+.side-bg {
+    display: flex;
+    min-width: 380px;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.233) url('img/syuhei-inoue-kaoHI0iHJPM-unsplash.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+
+}
+
+.logo-background {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    height: 120px;
+    margin-top: 160px;
+}
+
+.logo {
+    display: flex;
+    width: 240px;
+    justify-content: space-evenly;
+}
+
+.logo > img {
+    width: 90px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: staatliches, sans-serif;
+    font-size: 4.5rem;
+    color: white;
+}
+
+.credit {
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.credit > a {
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 600px;
+    background-color: rgb(250, 250, 250);
+}
+
+.signup-intro {
+    margin-top: 80px;
+    max-width: 720px;
+}
+
+.signup-intro > p {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 20px 20px;
+}
+
+.signup {
+    background-color: white;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.247);
+    padding: 20px;
+}
+
+.signup > legend {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.signup > div {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.signup > div > div {
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.signup > div > div > input {
+    margin-top: 3px;
+    border: solid 1px;
+    border-color: rgb(192, 192, 192);
+    border-radius: 3px;
+    background-color: rgb(250, 250, 250);
+    padding: 5px;
+}    
+
+
+.signup > div > div > input:focus {
+    outline: none;
+    border-color: rgb(60, 60, 255);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.26);
+}
+
+.signup > div > div > input[type="password"]:invalid {
+    border-color: red;
+}
+
+.signup-action {
+    flex-grow: 1;
+    margin: 20px;
+}
+
+.signup-action > button {
+    background-color:darkolivegreen;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.219);
+    border: none;
+    cursor: pointer;
+}
+
+.signup-action > button + div {
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+
+.signup-action > button + div > a {
+    color: darkolivegreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* * {
+    border: dotted 1px;
+} */
